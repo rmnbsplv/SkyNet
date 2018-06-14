@@ -1,0 +1,241 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+body {
+	font-family: 'Roboto Condensed', Arial, Tahoma, sans-serif;
+	font-size: 20px;
+	background: #EFEFF4;
+	color: #4D575D;
+	line-height: 1.6;
+}
+
+ul,li {
+	list-style: none;
+	padding: 0; margin: 0;
+}
+
+
+
+a {
+	color: #007AFF;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+a:hover {
+	border-bottom-color: inherit;
+}
+
+.bold {
+	font-weight: bold;
+}
+.green {
+	color: #82C12B;
+}
+.pointer {
+	cursor: pointer;
+}
+
+
+#container {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.tarif, .tarif__screen2, .tarif__screen3 {
+	position: relative;
+	width: 31.33%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 1.5em;
+	background: #fff;
+	border-top: 1px solid #C8C7CC;
+	border-bottom: 1px solid #C8C7CC;
+}
+.tarif__title span {
+	font-size: 1.25em;
+}
+ul.tarif > li, ul.tarif > .tarif__options > ul >li, .tarif__screen2 > li, .tarif__screen3 > li {
+	margin-left: 1.5em;
+	margin-top: .15em;
+	margin-bottom: .15em;
+}
+ul.tarif > .tarif__options, ul.tarif > .tarif__options .tarif__speed {
+	margin-left: 0;
+	margin-top: .5em;
+}
+ul.tarif > .tarif__options .tarif__speed span {
+	display: inline-block;
+	padding-left: 1.5em;
+	padding-right: .75em;
+	color: #fff;
+}
+
+
+
+ul.tarif > .tarif__title {
+	border-bottom: 1px solid #C8C7CC;
+}
+ul.tarif > .tarif__link, .tarifs__screen2 {
+	margin-bottom: .5em;
+	border-top: 1px solid #C8C7CC;
+}
+ul.tarif > .tarif__options[tarif_group="Земля"] .tarif__speed span {
+	background: #70603E;
+}
+ul.tarif > .tarif__options[tarif_group="Вода"] .tarif__speed span, ul.tarif > .tarif__options[tarif_group="Вода HD"] .tarif__speed span {
+	background: #0075D9;
+}
+ul.tarif > .tarif__options[tarif_group="Огонь"] .tarif__speed span, ul.tarif > .tarif__options[tarif_group="Огонь HD"] .tarif__speed span {
+	background: #E74807;
+}
+
+
+
+.tarif__screen2, .tarif__screen3 {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+
+.tarif__options {
+	position: relative;
+}
+i.arrow {
+	display: inline-block;
+	font-style: normal;
+	position: absolute;
+	top: 50%; right: 1.5em;
+	margin-top: -0.37em;
+	width: 0.6em;
+	height: 0.6em;
+	border-right: 0.14em solid #C7C7CC;
+	border-top: 0.14em solid #C7C7CC;
+	transform: rotate(45deg);
+}
+
+.tarif__options:hover i.arrow, .tarifs__screen2:hover i.arrow {
+	border-right-color: green;
+	border-top-color: green;
+}
+#result_header #back i.arrow, #result_header2 #back2 i.arrow {
+	border-left: 0.14em solid #82C12B;
+	border-right: none;
+	border-bottom: 0.14em solid #82C12B;
+	border-top: none;
+	left: .5em;
+}
+#result_header #back i.arrow:hover, #result_header2 #back2 i.arrow:hover {
+	border-left-color: black;
+	border-bottom-color: black;
+}
+
+#result_container, #result_container2 {
+	display: none;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	min-height: 100%;
+	text-align: center;
+	background: #EFEFF4;
+	z-index: 2;
+}
+#result_content, #result_content2 {
+	position: relative;
+	width: 100%;
+	max-width: 750px;
+	margin: 0 auto;
+}
+#back, #back2 {
+	display: block;
+	position: absolute;
+	top: 0; left: .5em;
+	width: 2em; height: 100%;
+}
+#result, #result2 {
+	text-align: left;
+}
+#result_header, #result_header2 {
+	position: relative;
+	margin-bottom: 1.5em;
+	padding: .5em 0;
+	background: #F7F7F8;
+}
+
+
+
+.tarifs__screen2 {
+	position: relative;
+	
+}
+
+.screen__3__pay {
+	line-height: 1.2;
+	margin: .5em 0;
+}
+.screen__3__date {
+	padding-bottom: .5em;
+	line-height: 1.2;
+	color: #AAAAAA;
+	margin-bottom: .5em;
+	border-bottom: 1px solid #C8C7CC;
+}
+.tarif__screen3 > .screen__3__title {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	margin-bottom: .5em;
+	border-bottom: 1px solid #C8C7CC;
+}
+#done {
+	position: relative;
+	display: inline-block;
+	width: 95%;
+	margin-right: 1em;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	margin: .75em 0;
+	color: #fff;
+	background: #82C12B;
+	text-align: center;
+}
+
+
+@media screen and (min-width:1024px) {
+	
+}
+
+@media screen and (max-width:1023px) {
+	.tarif {
+		width: 47.33%;
+	}
+}
+
+@media screen and (max-width:639px) {
+	.tarif {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
